@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Sign Up</h1>
+                    <h3>Register your account</h3>
+                </div>
+                <form>
+                    <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+                        <div class="mb-3">
+                            <label for="exampleInputName" class="form-label">Full Name:</label><br>
+                            <input formControlName="fullname" type="text" class="form-control" id="exampleInputName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputMobile" class="form-label">Mobile Number:</label><br>
+                            <input formControlName="mobile" type="number" class="form-control" id="exampleInputMobile">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address:</label><br>
+                            <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password:</label><br>
+                            <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                      
+                    </form>
+                </form>
+                <br>
+                <p>Already a user? <a routerLink="/login">LOGIN</a></p>
+            </div>
+        </div>
+    </div>
+</div>

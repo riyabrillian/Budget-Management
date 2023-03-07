@@ -1,0 +1,9 @@
+<div>
+    <form [formGroup]="expenses" (ngSubmit)="expenditure()">
+        <div class="exp">Expenditure type</div>
+        <input type="text" class="expend" formControlName="expType">
+        <div class="exp-value">Expenditure value</div>
+        <input type="number" class="threshold" formControlName="expValue"><br>
+        <button type="submit" class="btn btn-primary">Submit</button><br><br>
+    </form>
+</div>
